@@ -6,8 +6,7 @@ public class AVL<T> {
 	}
 
 	public T search(int key){
-
-		return null;
+		return recSearch(key,root);
 	}
 	public T recSearch(int key,AVLNode<T> node)
 	{
