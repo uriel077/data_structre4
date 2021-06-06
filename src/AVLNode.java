@@ -1,11 +1,17 @@
 
 public class AVLNode<T> {
-	private AVLNode<T> left;
-	private AVLNode<T> right;
+	public AVLNode<T> left;
+	public AVLNode<T> right;
 	private AVLNode<T> parent;
 	private int key=0;
 	private T data;
-	
+	private int height;
+
+	public AVLNode(int key, T data) {
+		this.key=key;
+		this.data=data;
+	}
+
 	public AVLNode<T> getLeftChild(){
 		return left;
 	}
@@ -44,6 +50,14 @@ public class AVLNode<T> {
 		}
 		
 		return s;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
 	}
 }
 
