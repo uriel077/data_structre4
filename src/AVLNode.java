@@ -1,35 +1,33 @@
 
 public class AVLNode<T> {
-
+	private AVLNode<T> left;
+	private AVLNode<T> right;
+	private AVLNode<T> parent;
+	private int key=0;
+	private T data;
 	
 	public AVLNode<T> getLeftChild(){
-		//TODO
-		return null;
+		return left;
 	}
 	
 	public AVLNode<T> getRightChild(){
-		//TODO
-		return null;
+		return right;
 	}
 	
 	public AVLNode<T> getFather(){
-		//TODO
-		return null;
+		return parent;
 	}
 	
 	public int getKey(){
-		//TODO
-		return 0;
+		return key;
 	}
 	
 	public T getData(){
-		//TODO
-		return null;
+		return data;
 	}
 	
 	@Override
 	public String toString() {
-		
 		String s = "";
 		
 		if (getLeftChild() != null){
